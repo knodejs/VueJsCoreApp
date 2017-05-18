@@ -1,6 +1,10 @@
 {
   "name": "vuejscoreapp",
   "version": "1.0.0",
+  "scripts": {
+    "prepublish": [ "npm install", "npm run clean", "node node_modules/webpack/bin/webpack.js --config webpack.config.vendor.js --env.prod", "node node_modules/webpack/bin/webpack.js --env.prod" ],
+    "postpublish": [ "dotnet publish-iis --publish-folder %publish:OutputPath% --framework %publish:FullTargetFramework%" ]
+  },
   "dependencies": {
     "aspnet-webpack": "^1.0.25",
     "axios": "^0.15.3",
