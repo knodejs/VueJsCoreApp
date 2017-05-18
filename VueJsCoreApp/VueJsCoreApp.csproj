@@ -6,12 +6,6 @@
     <OutputType>Exe</OutputType>
     <PackageTargetFallback>$(PackageTargetFallback);dotnet5.6;portable-net45+win8</PackageTargetFallback>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Content Include="wwwroot\favicon.ico" />
-    <Content Include="wwwroot\static\favicon.ico" />
-    <Content Include="wwwroot\web.config" />
-  </ItemGroup>
   <ItemGroup>
     <None Update="ClientApp\dist\**\*;node_modules\**\*;Views\**\*;wwwroot\**\*">
       <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
