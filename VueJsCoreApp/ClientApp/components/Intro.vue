@@ -11,7 +11,7 @@
     name: 'intro',
     data() {
       return {
-        appTitle: 'VueJsCoreApp',
+        appTitle: 'VueJsCoreApp by dotnatcore',
       }
     }
   }
@@ -22,7 +22,7 @@
   .intro {
     margin-top: 15%;
   }
-  
+
   .app-title {
     font-size: 4rem;
     letter-spacing: 0.1rem;
